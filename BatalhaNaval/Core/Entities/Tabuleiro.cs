@@ -42,17 +42,13 @@ namespace BatalhaNaval.Core.Entities
             }
 
             var navio = Area[linha, coluna];
+
             if (navio == null)
-            {
                 Console.WriteLine("Oops! Você atirou na água :(");
-                HistoricoTirosSofridos.Add(new HistoricoMovimento(linha, coluna));
+            else
+                navio.Atingir();
 
-                return true;
-            }
-
-            navio.Atingir();
             HistoricoTirosSofridos.Add(new HistoricoMovimento(linha, coluna, navio));
-
             return true;
         }
 

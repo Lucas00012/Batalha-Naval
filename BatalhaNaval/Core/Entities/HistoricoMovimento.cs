@@ -21,8 +21,8 @@ namespace BatalhaNaval.Core.Entities
             Coluna = coluna;
 
             Nome = navio?.Nome;
-            Sucedido = navio != null;
             Afundado = navio?.Afundado ?? false;
+            Sucedido = navio != null;
         }
 
         public bool Comparar(int linha, int coluna)
