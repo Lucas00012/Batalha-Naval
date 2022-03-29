@@ -1,5 +1,5 @@
-# Battleship Game
-Battleship game console application developed in C#
+# Batalha Naval
+Jogo batalha naval desenvolvido em C# (console app)
 
 ## Preview
 ![image](https://user-images.githubusercontent.com/51132386/160057725-7d5b495b-cb6a-4d47-b215-2e1d9b63cc16.png)
